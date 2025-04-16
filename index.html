@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Popup Form Example</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <!-- Popup Modal -->
+  <div id="popupForm" class="popup-modal">
+    <div class="popup-content">
+      <span id="closeFormBtn" class="close-btn">&times;</span>
+
+      <!-- Left Image Section -->
+      <div class="popup-left">
+        <img src="IMG/logo1.jpg" alt="CHAMEZA" class="logo-img" />
+        <img src="IMG/1.png" alt="Lab" class="popup-img" />
+      </div>
+
+      <!-- Right Form Section -->
+      <div class="popup-right">
+        <h2>Talk to Our Experts – Submit Your Inquiry!</h2>
+        <p>Transform your workspace with our innovative solutions</p>
+
+        <div id="formContent">
+          <form id="inquiryForm">
+            <input type="text" id="name" placeholder="Your Name" required />
+            <input type="email" id="email" placeholder="Your Email" required />
+            <input type="tel" id="phone" placeholder="Phone Number" required />
+            <textarea id="message" placeholder="How can we help you?" required></textarea>
+
+            <button type="submit" class="submit-btn">Get Started</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
