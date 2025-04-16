@@ -21,6 +21,13 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 
+
+    window.onload = () => {
+        setTimeout(() => {
+          document.getElementById("popupForm").style.display = "flex";
+        }, 2000);
+      };
+      
     // Close popup if user clicks outside the modal content
     window.addEventListener("click", function (event) {
         if (event.target === popupForm) {
@@ -58,3 +65,9 @@ document.addEventListener("DOMContentLoaded", function () {
         });
     }
 });
+
+
+document.getElementById("closeFormBtn").onclick = () => {
+    document.getElementById("popupForm").style.display = "none";
+  };
+  
